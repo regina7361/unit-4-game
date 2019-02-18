@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+    </head>
+    <body onLoad="setup();">
+        <header id="title">Crystal Collector<header>
+
+
+        <div id="instructions">
+            Game Instructions:
+            <ol type="a">
+            <li>A random number will be given at the start of the game.</li>
+            <li>Click on one of the four crystals below and a random number 
+                of points will be added to the total score. </li>
+            <li>The value of each crystal is hidden from you until
+                you click on it.</li>
+            <li>To win the game - click enough crystals to match 
+                the total score with the random number. </li>
+            <li>Note - if the total score goes above the random number you will lose the game.</li>
+            <li>Each time the game starts, the game will change the random number
+                and the values on each crystal.</li>
+            </ol>
+        </div>
+          
+        
+        <div class="parent" style="float:left;margin:25px;width:50%;">
+        <div class="crystals"><img src="assets/images/amethyst.png" alt="amethyst" 
+            style="width:150px;height:150px;">5</div>
+        <div class="crystals"><img src="assets/images/bluecrystals.png" alt="bluecrystal"
+            style="width:150px;height:150px;">10</div>
+        <div class="crystals"><img src="assets/images/heartcrystal.png" alt="heartcrystal"
+            style="width:150px;height:150px;">1</div>
+        <div class="crystals"><img src="assets/images/whitecrystal.png" alt="whitecrystal"
+            style="width:150px;height:150px;">15</div>
+        </div>
+
+        <div class="randomHead">
+            <h4>Random Number: </h4>
+            <div id="randomNum"></div>
+        </div>
+
+        <div class="randomHead">
+            <h4>Total Score: </h4>
+            <div id="totalScore">100</div>
+        </div>
+
+        <div class="randomHead2">
+            <h4>Wins: </h4>
+            <div id="wins">1</div>
+        </div>
+
+        <div class="randomHead2">
+            <h4>Losses: </h4>
+            <div id="loss">1</div>
+        </div>
+    </body>
+</html>
