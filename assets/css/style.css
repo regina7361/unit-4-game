@@ -87,6 +87,9 @@ h2 {
 #loss {
     font-size: 40px;
     padding: 10px;
+    color: blue;
+    font-weight: bold;
+
 }
 
 h4 {
