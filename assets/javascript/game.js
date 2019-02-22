@@ -1,6 +1,6 @@
 var totalScore = 0;
-var wins = 0;
-var losses = 0;
+var winCount = 0;
+var lossCount = 0;
 
 //select a random number
 var randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -21,7 +21,7 @@ function setup() {
 $(".crystals").click(handleClick);
 }
 
-//make crystals clickable
+//make crystals clickable and add teh crystal numbers together
 function handleClick(e) {
     var x = e.currentTarget.innerText;
     let clickedNum = parseInt($(this).attr('value'));
@@ -33,14 +33,20 @@ function handleClick(e) {
     console.log(x);
 }
 
-//crystal keeps the random number that was first selected
+//if total score matches random number increment wins
+if(totalScore == randomNumber){
+    winCount++;
+    document.getElementById('wins').innerHTML = winCount;
+    alert('You Win!');
+}
 
-//add the crystal numbers together
+//if total score exceeds random number
+else if(totalScore > randomNumber){
+    lossCount++;
+    document.getElementById('loss').innerHTML = lossCount;
+    alert('You Lose!');
+}
 
-//if user matches random number user wins
-//if user exceeds random number user loses
-//increment wins
-//increment losses
 //clear random number
 //clear crystal numbers
 //start a new game
