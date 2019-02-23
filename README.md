@@ -5,3 +5,5 @@
             4. To win the game - click enough crystals to match the total score with the random number. 
             5. Note - if the total score goes above the random number you will lose the game.
             6. Each time the game starts, the game will change the random number and the values on each crystal.
+            7. Click "Start Over" to reset the game
+
