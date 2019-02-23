@@ -25,27 +25,57 @@ body {
     width: 200px;
     height: 100px;
     text-align: center;
-    margin: 10px;
-    margin-bottom: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 330px;
     display: table;
     border: 1px solid blue;
+    float: left;
 }
 
-.randomHead2 {
+.totalHead {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    display: table;
+    border: 1px solid blue;
+    float: left;
+}
+
+.winsHead {
     clear: left;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
     width: 200px;
     height: 100px;
     text-align: center;
-    margin: 10px;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 330px;
     display: table;
     border: 1px solid blue;
+    float: left;
+}
+
+.lossHead {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    display: table;
+    border: 1px solid blue;
+    float: left;
 }
 
 #instructions {

@@ -19,6 +19,7 @@ function setup() {
 }
 
 $(".crystals").click(handleClick);
+$("#startOver").click(startOver);
 }
 
 //make crystals clickable and add teh crystal numbers together
@@ -31,22 +32,41 @@ function handleClick(e) {
 //when a user clicks a crystal display number in Total Score box
     $("#totalScore").text(totalScore);
     console.log(x);
-}
 
 //if total score matches random number increment wins
-if(totalScore == randomNumber){
-    winCount++;
-    document.getElementById('wins').innerHTML = winCount;
-    alert('You Win!');
-}
+    if(totalScore == randomNumber){
+        winCount++;
+        document.getElementById('wins').innerHTML = winCount;
+        setTimeout(function() { alert("You Win!"); });
+    }
 
 //if total score exceeds random number
-else if(totalScore > randomNumber){
-    lossCount++;
-    document.getElementById('loss').innerHTML = lossCount;
-    alert('You Lose!');
+    else if(totalScore > randomNumber){
+        lossCount++;
+        document.getElementById('loss').innerHTML = lossCount;
+        setTimeout(function() { alert("You Lose!"); });
+    }    
 }
 
-//clear random number
-//clear crystal numbers
+//clear random number, total Score number
 //start a new game
+function startOver(e) {
+    console.log("help");
+
+   $("#totalScore").text("");
+
+   totalScore = 0;
+
+   var randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(randomNumber);
+
+    document.getElementById('randomNum').innerHTML = randomNumber;
+    
+    for(let i = 0; i < 4; i++) {
+        let crystalNum = Math.floor(Math.random() * 10) + 1;
+        $("[data-id=cry" + i + "]").attr("value", crystalNum);
+        console.log($("[data-id=cry" + i + "]"));
+        console.log(crystalNum);
+        }  
+}
+
