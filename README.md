@@ -7,6 +7,6 @@
             6. Each time the game starts, the game will change the random number and the values on each crystal.
             7. Click "Start Over" to reset the game
             
-![alt text](https://raw.githubusercontent.com/regina7361/unit-4-game/blob/master/assets/images/Screen%20Shot%202019-02-23%20at%202.08.09%20PM.png)
+![alt text](https://github.com/regina7361/unit-4-game/blob/master/assets/images/Screen%20Shot%202019-02-23%20at%202.08.09%20PM.png)
 
       
