@@ -67,6 +67,3 @@ function startOver(e) {
         }
 }
 
-//fix alerts on start up
-//fix media responsiveness
-
