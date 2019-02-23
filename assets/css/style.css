@@ -158,11 +158,30 @@ h4 {
     {
         width: 100%;
     }
+    .parent {
+        margin-left: 70px;
+    }
+    .randomHead, .totalHead, .winsHead, .lossHead
+    {
+        margin-left: 118px;
+        display: inline;
+    }
+}
+
+/* Medium Screens*/
+@media screen and (min-width: 641px) and (max-width: 979px) {
+    h4, body, #title
+    {
+        width: 100%;
+    }
+    .randomHead, .winsHead {
+        margin-left: 250px;
+    }
 }
 
 
 /* Large Screens*/
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 980px) {
     h4, body, #title
     {
         width: 100%;
