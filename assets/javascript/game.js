@@ -11,12 +11,11 @@ function setup() {
     document.getElementById('randomNum').innerHTML = randomNumber;
     
 //on click assign a random number for each crystal
-    console.log("testing")
     for(let i = 0; i < 4; i++) {
     let crystalNum = Math.floor(Math.random() * 10) + 1;
     $("[data-id=cry" + i + "]").attr("value", crystalNum);
     console.log($("[data-id=cry" + i + "]"))
-}
+    }
 
 $(".crystals").click(handleClick);
 $("#startOver").click(startOver);
@@ -48,10 +47,8 @@ function handleClick(e) {
     }    
 }
 
-//clear random number, total Score number
-//start a new game
+//clear random number, total score number, start a new game
 function startOver(e) {
-    console.log("help");
 
    $("#totalScore").text("");
 
@@ -67,6 +64,9 @@ function startOver(e) {
         $("[data-id=cry" + i + "]").attr("value", crystalNum);
         console.log($("[data-id=cry" + i + "]"));
         console.log(crystalNum);
-        }  
+        }
 }
+
+//fix alerts on start up
+//fix media responsiveness
 
