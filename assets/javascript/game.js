@@ -30,7 +30,7 @@ function handleClick(e) {
 
 //when a user clicks a crystal display number in Total Score box
     $("#totalScore").text(totalScore);
-    console.log(x);
+    console.log(totalScore, randomNumber);
 
 //if total score matches random number increment wins
     if(totalScore == randomNumber){
@@ -54,7 +54,7 @@ function startOver(e) {
 
    totalScore = 0;
 
-   var randomNumber = Math.floor(Math.random() * 100) + 1;
+   randomNumber = Math.floor(Math.random() * 100) + 1;
     console.log(randomNumber);
 
     document.getElementById('randomNum').innerHTML = randomNumber;

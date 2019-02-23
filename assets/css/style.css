@@ -154,7 +154,7 @@ h4 {
 
 /* Small Screens*/
 @media screen and (max-width: 640px) {
-    body, #title, .parent, .randomHead, .totalHead, .winsHead, .lossHead
+    body, #title, .parent
     {
         width: 100%;
     }
